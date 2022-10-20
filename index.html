@@ -3,7 +3,11 @@
     <head>
         <title>WEB1 - Welcome</title>
         <meta charset="utf-8">
-        <!-- Google tag (gtag.js) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>    <!-- jQuery CDN (Content delivery Network) 활용 ()-->
+        <link rel="stylesheet" href="style.css">
+        <script src="colors.js"></script>
+
+        <!-- google anaytics-->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-CNC7QTBT9M"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -12,23 +16,34 @@
 
             gtag('config', 'G-CNC7QTBT9M');
         </script>
+        <!-- google anaytics-->
     </head>
 
     <body>
         <h1><a href="index.html">WEB</a></h1>
-        <ol>
-            <li><a href="01.html">HTML</a></li>
-            <li><a href="02.html">CSS</a></li>
-            <li><a href="03.html">JavaScript</a></li>
-        </ol>
-
-        <h2>World Wide Web</h2>
-
-        <p>대충 World Wide Web에 관한 내용.....
+        <div id="grid">
+            <input type="button" value="night" onclick="nightDayHandler(this);">
             <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </p>
-        <p>
+            <ol>
+                <li><a href="01.html">HTML</a></li>
+                <li><a href="02.html">CSS</a></li>
+                <li><a href="03.html">JavaScript</a></li>
+            </ol>
+
+            <div id="article">
+                <h2>World Wide Web</h2>
+                <p>대충 World Wide Web에 관한 내용.....
+                    <br>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+            </div>
+        </div>
+
+
+
+        <!-- disqus comment function -->
+        <div>
             <div id="disqus_thread"></div>
             <script>
                 /**
@@ -48,8 +63,10 @@
                 })();
             </script>
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </p>
-        <p>
+        </div>
+        <!-- disqus comment function -->
+
+        <div>
             <!--Start of Tawk.to Script-->
             <script type="text/javascript">
             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -63,7 +80,20 @@
             })();
             </script>
             <!--End of Tawk.to Script-->
-        </p>
+        </div>
+
+        <div class="coupang-partners">
+            <div>
+                <iframe src="https://coupa.ng/cdbDm7" width="120" height="240" frameborder="0" scrolling="no" referrerpolicy="unsafe-url"></iframe>
+            </div>
+
+            <div>
+                <script src="https://ads-partners.coupang.com/g.js"></script>
+                <script>
+                    new PartnersCoupang.G({"id":612265,"template":"carousel","trackingCode":"AF0546925","width":"680","height":"140"});
+                </script>
+            </div>
+        </div>
             
     </body>
 </html>
